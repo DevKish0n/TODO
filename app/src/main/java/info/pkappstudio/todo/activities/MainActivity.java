@@ -1,4 +1,4 @@
-package com.pkappstudio.todo.activities;
+package info.pkappstudio.todo.activities;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -12,7 +12,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -23,6 +22,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -34,10 +34,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.pkappstudio.todo.R;
-import com.pkappstudio.todo.Todo;
-import com.pkappstudio.todo.TodoAdapter;
-import com.pkappstudio.todo.TodoViewmodel;
+
+import info.pkappstudio.todo.R;
+import info.pkappstudio.todo.Todo;
+import info.pkappstudio.todo.TodoAdapter;
+import info.pkappstudio.todo.TodoViewmodel;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -58,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
     private BottomSheetDialog bottomSheetDialog;
     private RecyclerView recyclerView;
     private TodoViewmodel viewmodel;
-    private ImageView mNoTodo;
+    //private ImageView mNoTodo;
+    private LottieAnimationView mAnimationView;
     private TodoAdapter adapter;
     private FirebaseDatabase database;
     private DatabaseReference reference;
@@ -82,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
         mContextView = findViewById(R.id.layout);
 
         mProfileImage = findViewById(R.id.profile_image);
-        mNoTodo = findViewById(R.id.imageView3);
+        //mNoTodo = findViewById(R.id.imageView3);
+        mAnimationView = findViewById(R.id.animation_view);
 
         mAUth = FirebaseAuth.getInstance();
         mCurrentUser = mAUth.getCurrentUser();
@@ -100,12 +103,14 @@ public class MainActivity extends AppCompatActivity {
             adapter.submitList(todos);
 
             if (todos.isEmpty()) {
-                mNoTodo.setVisibility(View.VISIBLE);
+                //mNoTodo.setVisibility(View.VISIBLE);
+                mAnimationView.setVisibility(View.VISIBLE);
                 if (checkUser()) {
                     sync();
                 }
             } else {
-                mNoTodo.setVisibility(View.INVISIBLE);
+                //mNoTodo.setVisibility(View.INVISIBLE);
+                mAnimationView.setVisibility(View.INVISIBLE);
             }
 
             if (checkUser()) {

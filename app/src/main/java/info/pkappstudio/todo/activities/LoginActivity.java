@@ -1,4 +1,4 @@
-package com.pkappstudio.todo.activities;
+package info.pkappstudio.todo.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,8 +22,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.pkappstudio.todo.R;
-import com.pkappstudio.todo.customclasses.CustomProgress;
+
+import info.pkappstudio.todo.R;
+import info.pkappstudio.todo.customclasses.CustomProgress;
 
 import maes.tech.intentanim.CustomIntent;
 

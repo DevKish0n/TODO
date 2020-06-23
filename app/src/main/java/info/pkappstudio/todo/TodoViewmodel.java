@@ -1,4 +1,4 @@
-package com.pkappstudio.todo;
+package info.pkappstudio.todo;
 
 import android.app.Application;
 

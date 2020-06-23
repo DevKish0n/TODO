@@ -14,6 +14,6 @@
     <string name="about">About</string>
     <string name="this_app_is_designed_and_developed_by_pk_app_studio_copyright_all_right_reserved">This app is designed and developed by PK App Studio. Copyright © all right reserved.</string>
     <string name="get_in_touch">Get in touch</string>
-    <string name="email_info_pkappstudio_com">Email: info@pkappstudio.com</string>
-    <string name="web_www_pkappstudio_com">web: www.pkappstudio.com</string>
+    <string name="email_info_pkappstudio_com">Email: contact@pkappstudio.info</string>
+    <string name="web_www_pkappstudio_com">web: www.pkappstudio.info</string>
 </resources>

@@ -1,10 +1,11 @@
-package com.pkappstudio.todo.customclasses;
+package info.pkappstudio.todo.customclasses;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.view.Window;
 
-import com.pkappstudio.todo.R;
+import info.pkappstudio.todo.R;
+
 
 public class CustomProgress {
     private Activity activity;

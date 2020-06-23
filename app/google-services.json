@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "504120046917",
-    "firebase_url": "https://todo-51100.firebaseio.com",
-    "project_id": "todo-51100",
-    "storage_bucket": "todo-51100.appspot.com"
+    "project_number": "194797220510",
+    "firebase_url": "https://todo-97ff3.firebaseio.com",
+    "project_id": "todo-97ff3",
+    "storage_bucket": "todo-97ff3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:504120046917:android:dd0e63b6bf2f2567a2ba2c",
+        "mobilesdk_app_id": "1:194797220510:android:5c349b2079ec2e5b8e418f",
         "android_client_info": {
-          "package_name": "com.pkappstudio.todo"
+          "package_name": "info.pkappstudio.todo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "504120046917-5coee1vel77gb3h4jjicvl32r24tu0fl.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.pkappstudio.todo",
-            "certificate_hash": "b52e8d690a6a8ea6cf67210505b58991a316fd71"
-          }
-        },
-        {
-          "client_id": "504120046917-kl29kckpc2fcq5legng7i8pvtl02svug.apps.googleusercontent.com",
+          "client_id": "194797220510-qd3o8ptqm7f1pdls4nltos994ofd5h98.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBFmTenMJAe8GMKbOQ-Gnb_bd7yUWM28OE"
+          "current_key": "AIzaSyAvLvq9HL8lGvHHOxRu8cb0l4EEh9sV6RA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "504120046917-kl29kckpc2fcq5legng7i8pvtl02svug.apps.googleusercontent.com",
+              "client_id": "194797220510-qd3o8ptqm7f1pdls4nltos994ofd5h98.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

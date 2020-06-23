@@ -1,4 +1,4 @@
-package com.pkappstudio.todo;
+package info.pkappstudio.todo;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
+
 
 import java.sql.Timestamp;
 import java.text.ParseException;
