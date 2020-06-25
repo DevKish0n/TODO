@@ -105,12 +105,14 @@ public class MainActivity extends AppCompatActivity {
             if (todos.isEmpty()) {
                 //mNoTodo.setVisibility(View.VISIBLE);
                 mAnimationView.setVisibility(View.VISIBLE);
+                recyclerView.setVisibility(View.GONE);
                 if (checkUser()) {
                     sync();
                 }
             } else {
                 //mNoTodo.setVisibility(View.INVISIBLE);
                 mAnimationView.setVisibility(View.INVISIBLE);
+                recyclerView.setVisibility(View.VISIBLE);
             }
 
             if (checkUser()) {
